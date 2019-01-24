@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>World's Greatest Mac and Cheese</title>
+    <meta name="description" content="World's greatest macaroni and cheese (mac and cheese) recipe known to man. Elbow macaroni with cheddar, parmesan cheese, milk, and butter.">
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="./assets/custom_grid.css" type="text/css"/>
+    <script src="./assets/external_javascript_example.js" type="text/javascript"></script>
+    <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+    
+        ga('create', 'UA-12345678-9', 'auto');
+        ga('send', 'pageview');
+    
+    </script>
+</head>
+<body>
+    <header class="clearfix">
+            <img src="https://lever-client-logos.s3.amazonaws.com/58d4d1db-0eca-41d1-aa71-d8e40214ca16-1532545466470.png"/> 
+            <nav>
+                <ul>
+                        <li><a href="#description">Description</a></li>
+                        <li><a href="#ingredients">Ingredients</a></li>
+                        <li><a href="#directions">Directions</a></li>
+                        <li><a href="#reviews">Review</a></li>
+                    </ul>
+            </nav>
+    </header>
+    <h1>Macaroni and Cheese</h1>
+    <div class="col col-1-3">
+        <aside>    
+            <h2><a id="ingredients">Ingredients</h2>
+            <ul class="ingredients-list">
+                <li>8 ounces, uncooked elbow macaroni</li>
+                <li>2 cups, shredded sharp Cheddar cheese</li>
+                <li>1/2 cup, grated Parmesan cheese</li>
+                <li>3 cups, milk</li>
+                <li>1/4 cup, butter</li>
+            </ul>
+        </aside>
+    </div>
+    <div class="col col-2-3">
+        <section>
+            <h2>
+                <a id="description">Description</h2>
+                <p>Macaroni and cheese also called mac and cheese or mac n cheese in American and Canadian English, can sometimes be called macaroni pie in Caribbean English, and macaroni cheese in the United Kingdom — is a dish of English origin, consisting of cooked macaroni pasta and a cheese sauce, most commonly cheddar. 
+                </br>
+                </br>
+                It can also incorporate other ingredients, such as breadcrumbs, meat and vegetables. Traditional macaroni and cheese is a casserole baked in the oven; however, it may be prepared in a sauce pan on top of the stove or using a packaged mix. The cheese is often first incorporated into a Béchamel sauce to create a Mornay sauce, which is then added to the pasta. In the United States, it is considered a comfort food.</p>
+        </section>
+    </div>
+    <div class="clearfix">
+        <figure>
+            <img src="https://photos.bigoven.com/recipe/hero/four-cheese-baked-macaroni-and-57cddd.jpg"/>
+            <figcaption><a href = "https://en.wikipedia.org/wiki/Macaroni_and_cheese" target="_blank">Delicious Mac and Cheese</a></figcaption>
+        </figure>
+    </div>
+        <section>
+            <h2><a name="directions">Directions</h2>
+                <ol>
+                    <li>Cook macaroni according to the package directions. Drain.</li>
+                    <li>In a saucepan, melt butter or margarine over medium heat. Stir in enough flour to make a roux. Add milk to roux slowly, stirring constantly. Stir in cheeses, and cook over low heat until cheese is melted and the sauce is a little thick. Put macaroni in large casserole dish, and pour sauce over macaroni. Stir well.</li>
+                    <li>Melt butter or margarine in a skillet over medium heat. Add breadcrumbs and brown. Spread over the macaroni and cheese to cover. Sprinkle with a little paprika.</li>
+                    <li>Bake at 350 degrees F (175 degrees C) for 30 minutes. Serve.</li>
+                </ol>
+        </section>
+    <section id="reviews">
+            <h2>Reviews</h2>
+              <form id="review-form" actions="/reviews" method="post">
+                <label for="name">Name</label>
+                <input id="name" type="text" name="name">
+                1<input type="radio" name="rating" value="1" checked>
+                2<input type="radio" name="rating" value="2">
+                3<input type="radio" name="rating" value="3">
+                4<input type="radio" name="rating" value="4">
+                5<input type="radio" name="rating" value="5">
+        
+                <select id="expertise" name="expertise">
+                  <option value="Select Cooking Expertise" disabled="true" selected="true">Select Cooking Experise</option>
+        
+                  <option value="Sometimes Cook">Sometimes Cook</option>
+        
+                  <option value="Cook Everyday">Cook Everyday</option>
+        
+                  <option value="Cooking is a Hobby">Cooking is a Hobby</option>
+        
+                  <option value="Professional Chef">Professional Chef</option>
+                </select>
+        
+                <label>Review
+                  <textarea id="review" name="review" cols="30" rows="10"></textarea>
+                </label>
+        
+                <input type="submit" value="Submit Review">
+              </form>
+          </section>
+        
+    <footer>
+            <p>Made with love by <a href="https://www.allrecipes.com/recipe/11679/homemade-mac-and-cheese/">Judy</a></p>
+    </footer>
+</body>
+</html>

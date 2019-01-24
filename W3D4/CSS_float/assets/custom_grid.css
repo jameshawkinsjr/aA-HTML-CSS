@@ -1,0 +1,164 @@
+/* Introduction to Cascading Style Sheets */
+
+html, body, section, article, h1, h2, p {
+    margin: 0;
+    border: 0; 
+    padding: 0;
+    font-family: inherit;
+    list-style-type: none;
+    line-height: 1.5;
+  }
+  
+  img {
+    max-width: 100%;
+  }
+  
+  a .href:hover {
+    color: blue;
+  }
+  
+  body {
+    /* If the user cannot load the Arial font, the sans-serif font is used */
+    font-family: Arial, sans-serif;
+    background-color: #FEFFF1;
+    width: 80%;
+    margin: 0 auto;
+  }
+  
+  nav {
+    float: right;
+  }
+  
+  nav ul {
+    display: flex;
+    list-style-type: none;
+  }
+  
+  h1 {
+    font-size: 38px;
+    margin: 20px 0px;
+  }
+  
+  h2 {
+    font-size: 32px;
+  }
+
+  figure img {
+      height: 300px;
+      width: 300px;
+  }
+  
+  /* This selector selects ALL anchor tag children of ALL list elements that
+  are children of an Unordered Lsit element */
+  ul li a, figcaption a {
+    text-decoration: none;
+    color: black;
+    /* display: inline-block; */
+    padding: 20px 40px;
+  }
+  ul li a:hover, figcaption a:hover{
+    color: blue;
+  }
+  
+  
+  /* This selector selects only IMMEDIATE (1 level deep) image element children
+  of the header element */
+  header > img {
+    width: 100px;
+    float: left;
+    margin: 20px;
+  }
+  
+  /* Selects all elements with the class attribute "ingredients-list" */
+  /* .ingredients-list {
+    The list style property is shorthand for multiple list-style properties
+    list-style: square inside;
+  } */
+  
+  .ingredients-list li {
+    /* The list style property is shorthand for multiple list-style properties*/
+    margin: 15px 0px;
+  }
+  
+  ol {
+    list-style: upper-roman inside;
+  }
+  
+  ol li {
+    margin: 15px 0px;
+  }
+  
+  .user_review h4 {
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
+  #directions {
+    margin: 15px 0px;
+  }
+  
+  input[type="radio"] {
+      -webkit-appearance: none;
+      width: 27px;
+      height: 27px;
+      background-image: url(../assets/stars.png);
+      vertical-align: bottom;
+  }
+  
+  input[type="radio"]:checked {
+    background-position: 30px 30px;
+  }
+  
+  input[type=radio]:hover{
+    background-position:30px 60px
+  }
+  
+  
+  input:last-child {
+      background: gold;
+  }
+  
+  label {
+    display: table-caption;
+  }
+  
+  input:last-child:hover {
+      -webkit-filter: brightness(90%);
+  }
+  /* 
+  ol li:nth-of-type(2n) {
+    background-color: whitesmoke;
+  } */
+  
+  h2 + .user_review {
+      border-top: 1px solid black;
+  }
+  
+  .clearfix:after {
+    content:"";
+    clear:both;
+    display: block;
+  }
+
+
+  /* Grid */
+
+.col {
+    float:left;
+    padding: 10px;
+    box-sizing: border-box;
+  }
+
+.col-1-3 {
+    width: 33.33%;
+  }
+
+.col-2-3 {
+    width: 66.66%;
+  }
+
+.col:after{
+    content:"";
+    clear:both;
+    display: block;
+}
