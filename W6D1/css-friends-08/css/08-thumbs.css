@@ -1,0 +1,30 @@
+/* PHASE 8: Thumbs */
+
+
+.friends {
+    display: float;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.friends li {
+    width: 30%;
+    float: left;
+    margin: 5px 0px;
+}
+
+.friends li:nth-child(3),
+.friends li:nth-child(6),
+.friends li:nth-child(9) {
+    padding-left: 10px;
+}
+.friends li:nth-child(1),
+.friends li:nth-child(4),
+.friends li:nth-child(7) {
+    padding-right: 10px;
+}
+
+.thumb {
+    border-radius: 5px;
+    border: 1px solid black;
+}
