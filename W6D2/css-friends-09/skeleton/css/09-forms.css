@@ -1,0 +1,51 @@
+/* PHASE 9: Forms */
+
+.input {
+    display: flex;
+}
+
+.input thumb {
+    float: left;
+}
+
+.input-form {
+    background: #eee;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 15px;
+    margin: 0px 10px;
+    justify-content: space-evenly;
+    display: flex;
+    flex-direction: column;
+    width: calc(100% - 98px)
+}
+
+.input-form input[type="text"]{
+    background: white;
+    display: block;
+}
+
+.input-form strong {
+    font-weight: bold;
+}
+
+.input-form .submit {
+    background: #0c0;
+    color: white;
+    box-shadow: 0 1px 0 0 #070;
+    float: left;
+    width: 200px;
+    border-radius: 5px;
+    padding: 10px;
+    position: relative;
+}
+.input-form .input-paragraph,
+.input-form .input-text {
+    width: calc(100% - 50px);
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+.input-form .input-paragraph {
+    height: 100px;
+}
